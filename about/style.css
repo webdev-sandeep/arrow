@@ -259,7 +259,6 @@ footer{
     width: 100%;
     height: 50vh;
     background-color: #002849;
-    color: white;
 }
 
 .info{
@@ -278,15 +277,16 @@ footer{
     max-width: 25vw;
     height: 50%;
     padding: 0rem 5rem;
+    color: #fff;
 }
 
 .company .title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .company .description{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     word-spacing: 0.2rem;
 }
@@ -294,11 +294,12 @@ footer{
 .info .discover{
     width: 25vw;
     height: 60%;
+    color: #fff;
 }
 
 .discover .title{
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .discover ul{
@@ -307,7 +308,7 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .discover ul li{
@@ -321,7 +322,8 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     height: 50%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+   color: #fff;
 }
 
 .line{
@@ -352,10 +354,6 @@ footer{
 .copyright{
     margin-bottom: 1rem;
 }
-
-
-
-
 
 
 

@@ -403,3 +403,41 @@ footer{
     margin-bottom: 1rem;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                               MEDIA QUERRIES                               */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width:640px){
+    #hamburger{
+        display: flex;
+    }
+
+    #header{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 0px;
+    }
+
+    #logo{
+        margin-left: 1rem;
+    }
+
+    #nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        width: 100vw;
+    }
+
+    #nav-links.active{
+        display: flex;
+    }
+
+    .links{
+        width: 100%;
+        padding:0.75rem;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+    }
+}
