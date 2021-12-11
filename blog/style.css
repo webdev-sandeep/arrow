@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#logo{
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem 0.3rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover{
+    color: blue;
+}
+
+#hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.bar{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                INTRODUCTION                                */
+/* -------------------------------------------------------------------------- */
+
+#intro{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../images/blog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro .tranparent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5EEDC;
+}
+
+#intro .tranparent .title{
+    margin-top: 16rem;
+    font-size: 3.5rem;
+}
+
+#intro .tranparent .subtitle{
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 BLOG POSTS                                 */
+/* -------------------------------------------------------------------------- */
+
+.blog-posts{
+    width: 100%;
+    height: max-content;
+    background-color: #F8F8F8;
+}
+
+.blog-posts .container{
+    width: 50%;
+    margin: 0rem auto;
+    padding: 4rem;
+}
+
+.blog-posts .container .blog{
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    background-color: #FFF;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 5%);
+}
+
+.blog-posts .container .blog img{
+    max-width: 60%;
+    max-height: 100%;
+}
+
+.blog-posts .container .blog .blog-body{
+    padding: 2rem;
+}
+
+.blog-posts .container .blog .blog-body .date{
+    color: #999;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.blog-posts .container .blog .blog-body .title{
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: 500;
+}
+
+.blog-posts .container .blog .blog-body .description{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 NEWSLETTER                                 */
+/* -------------------------------------------------------------------------- */
+
+
+#newsletter{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#newsletter .title{
+    font-size: 2.5rem;
+    color: #142F43;
+    margin-top: 4rem;
+}
+
+#newsletter .subscribe{
+    margin-bottom: 4rem;
+}
+
+.subscribe input{
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 3px;
+    padding: 0 1rem;
+    border: 1px solid #142F43;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.subscribe button{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #142F43;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #002849;
+    color: white;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.info .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 25vw;
+    height: 50%;
+    padding: 0rem 5rem;
+}
+
+.company .title{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.company .description{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.info .discover{
+    width: 25vw;
+    height: 60%;
+}
+
+.discover .title{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.discover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.discover ul li{
+    list-style: none;
+}
+
+.contact{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    font-size: 1.5rem;
+}
+
+.line{
+    width: 90%;
+    height: 0.5px;
+    background-color: white;
+    margin: 2.5rem 0rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+} 
+
+.social a{
+    text-decoration: none;
+}
+
+.social a i{
+    font-size: 4rem;
+    margin: 0rem 1rem;
+    color:white;
+}
+
+.copyright{
+    margin-bottom: 1rem;
+}

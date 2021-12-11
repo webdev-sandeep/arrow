@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#logo{
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem 0.3rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover{
+    color: blue;
+}
+
+#hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.bar{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                INTRODUCTION                                */
+/* -------------------------------------------------------------------------- */
+
+#intro{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro .tranparent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5EEDC;
+}
+
+#intro .tranparent .title{
+    margin-top: 16rem;
+    font-size: 3.5rem;
+}
+
+#intro .tranparent .subtitle{
+    font-size: 1.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 CONTACT US                                 */
+/* -------------------------------------------------------------------------- */
+
+input{
+    width: 95%;
+    height: 2rem;
+    border: 1px solid #555;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #FFF;
+}
+
+.contact-us{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 4rem;
+}
+
+.contact-us .container{
+    width: 50%;
+    margin: 0rem auto;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.contact-us .container .title{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.contact-us .container .subtitle{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.contact-us .container .details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .container .details .name,.mail,.message{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.contact-us .container .details .name .first-name,.last-name, .contact-us .container .details .mail .email,.phone, .contact-us .container .details .message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.captcha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.half{
+    width: 50%;
+}
+
+button{
+    max-width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0054a6;
+    color: #FFF;
+}
+
+button:hover{
+    background-color: #3cb878
+}
+
+.first-name label,.last-name label,.email label,.phone label,.message label,.captcha label{
+    margin-bottom: 1rem;
+}
+
+.message textarea{
+    width: 50%;
+    min-height: 20vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     MAP                                    */
+/* -------------------------------------------------------------------------- */
+
+.map{
+    width: 100%;
+}
+
+.map iframe{
+    width: 100%;
+    min-height: 50vh;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 NEWSLETTER                                 */
+/* -------------------------------------------------------------------------- */
+
+
+#newsletter{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#newsletter .title{
+    font-size: 2.5rem;
+    color: #142F43;
+    margin-top: 4rem;
+}
+
+#newsletter .subscribe{
+    margin-bottom: 4rem;
+}
+
+.subscribe input{
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 3px;
+    padding: 0 1rem;
+    border: 1px solid #142F43;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.subscribe button{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #142F43;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #002849;
+    color: white;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.info .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 25vw;
+    height: 50%;
+    padding: 0rem 5rem;
+}
+
+.company .title{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.company .description{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.info .discover{
+    width: 25vw;
+    height: 60%;
+}
+
+.discover .title{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.discover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.discover ul li{
+    list-style: none;
+}
+
+.contact{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    font-size: 1.5rem;
+    
+}
+
+.line{
+    width: 90%;
+    height: 0.5px;
+    background-color: white;
+    margin: 2.5rem 0rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+} 
+
+.social a{
+    text-decoration: none;
+}
+
+.social a i{
+    font-size: 4rem;
+    margin: 0rem 1rem;
+    color:white;
+}
+
+.copyright{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#logo{
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem 0.3rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover{
+    color: blue;
+}
+
+#hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.bar{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                INTRODUCTION                                */
+/* -------------------------------------------------------------------------- */
+
+#intro{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../images/pricing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro .tranparent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5EEDC;
+}
+
+#intro .tranparent .title{
+    margin-top: 16rem;
+    font-size: 3.5rem;
+}
+
+#intro .tranparent .subtitle{
+    font-size: 1.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  SERVICES                                  */
+/* -------------------------------------------------------------------------- */
+
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+#services .headings{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark{
+    width: 3.5rem;
+    height: 5px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#services .headings h1{
+    font-size: 2.5rem;
+    margin: 0.5rem auto;
+}
+
+#services .headings h3{
+    font-size: 1.5rem;
+    color: #99A799;
+    text-transform: uppercase;
+}
+
+#services .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 4rem auto;
+}
+
+#services .cards .card{
+    width: 20vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+}
+
+#services .cards .card .card-header{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+#services .cards .card:nth-child(2n) .card-header{
+    color: #f53e7d;
+}
+
+#services .cards .card:nth-child(2n+1) .card-header h2{
+    font-size: 1.5rem;
+    color: #222;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#services .cards .card .card-header .currency{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#services .cards .card .card-header .value{
+    font-size: 7rem;
+    font-weight: 200;
+}
+
+#services .cards .card .card-header .duration{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#services .cards .card .card-body{
+    width: 100%;
+    height: 70%;
+}
+
+#services .cards .card .card-body .features{
+    width: 100%;
+    height: 80%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#services .cards .card .card-body .features .feature{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+}
+
+#services .cards .card .card-body .features .feature:nth-child(2n){
+    background-color: #FFFFFF;
+}
+
+#services .cards .card .card-body .features .feature:nth-child(2n+1){
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+#services .cards .card .card-body input{
+    width: 100%;
+    height: 20%;
+    border: none;
+    font-size: 1rem;
+    background-color: #0054a6;
+    cursor: pointer;
+}
+
+#services .cards .card:nth-child(2n) .card-body input{
+    background-color: #f53e7d;
+}
+
+#services .cards .card .card-body input:hover{
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 NEWSLETTER                                 */
+/* -------------------------------------------------------------------------- */
+
+
+#newsletter{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#newsletter .title{
+    font-size: 2.5rem;
+    color: #142F43;
+    margin-top: 4rem;
+}
+
+#newsletter .subscribe{
+    margin-bottom: 4rem;
+}
+
+.subscribe input{
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 3px;
+    padding: 0 1rem;
+    border: 1px solid #142F43;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.subscribe button{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #142F43;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #002849;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.info .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 25vw;
+    height: 50%;
+    padding: 0rem 5rem;
+    color: #fff;
+}
+
+.company .title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.company .description{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.info .discover{
+    width: 25vw;
+    height: 60%;
+    color: #fff;
+}
+
+.discover .title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.discover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 1.25rem;
+}
+
+.discover ul li{
+    list-style: none;
+}
+
+.contact{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    font-size: 1.25rem;
+   color: #fff;
+}
+
+.line{
+    width: 90%;
+    height: 0.5px;
+    background-color: white;
+    margin: 2.5rem 0rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+} 
+
+.social a{
+    text-decoration: none;
+}
+
+.social a i{
+    font-size: 4rem;
+    margin: 0rem 1rem;
+    color:white;
+}
+
+.copyright{
+    margin-bottom: 1rem;
+}
+
